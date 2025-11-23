@@ -1,6 +1,6 @@
 name: "Apple Intelligence Proxy"
 desc: "Forces Apple Intelligence, Siri, and Private Cloud Compute domains through the Proxy group to bypass geo-restrictions."
-icon: "https://raw.githubusercontent.com/hostileman/stash_override/main/AI.png"
+icon: "https://raw.githubusercontent.com/RixGem/stash_override/main/ai.png"
 category: "AI"
 author: "PlatoBot"
 

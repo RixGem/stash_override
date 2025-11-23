@@ -1,6 +1,6 @@
 name: "Prevent DNS Leak"
 desc: "Adds a rule to prevent DNS leaks and enables fake-ip mode."
-icon: "https://raw.githubusercontent.com/hostileman/stash_override/main/prevent-dns-leak.png"
+icon: "https://raw.githubusercontent.com/RixGem/stash_override/main/prevent-dns-leak.png"
 category: "Security"
 
 rule-providers:

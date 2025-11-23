@@ -1,6 +1,6 @@
 name: Apple Relay Proxy
 desc: Override for Apple Relay services to use proxy
-icon: "https://raw.githubusercontent.com/hostileman/stash_override/main/apple-relay-proxy.png"
+icon: "https://raw.githubusercontent.com/RixGem/stash_override/main/apple-relay-proxy.png"
 category: "Privacy"
 
 rules:
