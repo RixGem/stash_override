@@ -1,5 +1,7 @@
 name: "Apple Intelligence Proxy"
 desc: "Forces Apple Intelligence, Siri, and Private Cloud Compute domains through the Proxy group to bypass geo-restrictions."
+icon: "https://raw.githubusercontent.com/hostileman/stash_override/main/AI.png"
+category: "AI"
 author: "PlatoBot"
 
 # Stash inserts these rules at the VERY TOP of your existing rule list.

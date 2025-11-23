@@ -1,5 +1,7 @@
 name: "WeChat Proxy"
 desc: "Forces WeChat International domains to route through the Proxy group."
+icon: "https://raw.githubusercontent.com/hostileman/stash_override/main/wechat.png"
+category: "Social"
 author: "PlatoBot"
 
 # These rules will be inserted at the top of your existing rules, 
