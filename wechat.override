@@ -6,17 +6,17 @@ author: "PlatoBot"
 # ensuring they take precedence.
 rules:
   # Core International Domains
-  - DOMAIN-SUFFIX,wechat.com,PROXY
-  - DOMAIN-SUFFIX,wechat.co.za,PROXY
-  - DOMAIN-SUFFIX,wechatlegal.net,PROXY
-  - DOMAIN-SUFFIX,wechatos.net,PROXY
-  - DOMAIN-SUFFIX,wechatpay.com,PROXY
+  - DOMAIN-SUFFIX,wechat.com,Proxy
+  - DOMAIN-SUFFIX,wechat.co.za,Proxy
+  - DOMAIN-SUFFIX,wechatlegal.net,Proxy
+  - DOMAIN-SUFFIX,wechatos.net,Proxy
+  - DOMAIN-SUFFIX,wechatpay.com,Proxy
   
   # Catch-all keyword for any other variations
-  - DOMAIN-KEYWORD,wechat,PROXY
+  - DOMAIN-KEYWORD,wechat,Proxy
 
   # Optional: Underlying Tencent infrastructure often used by Intl version
   # Uncomment the lines below if you still experience connection issues
-  - DOMAIN-SUFFIX,weixin.com,PROXY
-  - DOMAIN-SUFFIX,qlogo.cn,PROXY
-  - DOMAIN-SUFFIX,qpic.cn,PROXY
+  - DOMAIN-SUFFIX,weixin.com,Proxy
+  - DOMAIN-SUFFIX,qlogo.cn,Proxy
+  - DOMAIN-SUFFIX,qpic.cn,Proxy
