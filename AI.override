@@ -1,0 +1,34 @@
+name: "Apple Intelligence Proxy"
+desc: "Forces Apple Intelligence, Siri, and Private Cloud Compute domains through the Proxy group to bypass geo-restrictions."
+author: "PlatoBot"
+
+# Stash inserts these rules at the VERY TOP of your existing rule list.
+# Ensure your proxy group is named "Proxy". If it is named "Select" or "Global", 
+# replace "Proxy" with that name in the list below.
+
+rules:
+  # --- Private Cloud Compute (PCC) ---
+  # These are the primary domains for server-side AI processing.
+  - DOMAIN-SUFFIX,apple-relay.cloudflare.com,Proxy
+  - DOMAIN-SUFFIX,apple-relay.fastly-edge.com,Proxy
+  - DOMAIN-SUFFIX,apple-relay.apple.com,Proxy
+  
+  # --- Siri & Dictation ---
+  # Classic domains used for voice queries and text-to-speech.
+  - DOMAIN,guzzoni.apple.com,Proxy
+  - DOMAIN,smoot.apple.com,Proxy
+  - DOMAIN,dictation.apple.com,Proxy
+  
+  # --- Location & Geo-fencing Checks ---
+  # Often used by Apple to verify device location eligibility.
+  - DOMAIN,gspe1-ssl.ls.apple.com,Proxy
+  - DOMAIN,cl4.apple.com,Proxy
+  
+  # --- Generative Features / Look Up ---
+  - DOMAIN-SUFFIX,apple-ml.apple.com,Proxy
+  - DOMAIN-KEYWORD,siri.search.apple.com,Proxy
+
+  # --- Optional: Private Relay Dependencies ---
+  # If PCC fails, uncommenting these might help, but it affects iCloud Private Relay.
+  - DOMAIN,mask.icloud.com,Proxy
+  - DOMAIN,mask-h2.icloud.com,Proxy
