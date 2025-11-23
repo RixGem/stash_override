@@ -1,0 +1,22 @@
+name: "WeChat Proxy"
+desc: "Forces WeChat International domains to route through the Proxy group."
+author: "PlatoBot"
+
+# These rules will be inserted at the top of your existing rules, 
+# ensuring they take precedence.
+rules:
+  # Core International Domains
+  - DOMAIN-SUFFIX,wechat.com,PROXY
+  - DOMAIN-SUFFIX,wechat.co.za,PROXY
+  - DOMAIN-SUFFIX,wechatlegal.net,PROXY
+  - DOMAIN-SUFFIX,wechatos.net,PROXY
+  - DOMAIN-SUFFIX,wechatpay.com,PROXY
+  
+  # Catch-all keyword for any other variations
+  - DOMAIN-KEYWORD,wechat,PROXY
+
+  # Optional: Underlying Tencent infrastructure often used by Intl version
+  # Uncomment the lines below if you still experience connection issues
+  - DOMAIN-SUFFIX,weixin.com,PROXY
+  - DOMAIN-SUFFIX,qlogo.cn,PROXY
+  - DOMAIN-SUFFIX,qpic.cn,PROXY
